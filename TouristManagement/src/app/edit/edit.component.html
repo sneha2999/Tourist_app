@@ -1,0 +1,48 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col">
+            <p class="h3"><i class="fa fa-pen">&nbsp;</i>Update Data</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <form action="">
+                <mat-form-field appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input formControlName="pName" matInput placeholder="first name">
+                  </mat-form-field>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input formControlName="pName" matInput placeholder="last name">
+                  </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Date of Arrival</mat-label>
+                    <input formControlName="pDate" matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Mobile Number</mat-label>
+                    <input matInput #input maxlength="10" placeholder="Mobile Number">
+                    <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+                  </mat-form-field>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Country Name</mat-label>
+                    <mat-select formControlName="pCategory"  placeholder="country">
+            <mat-option value="India">India</mat-option>
+            <mat-option value="Spain">Spain</mat-option>
+            <mat-option value="US">US</mat-option>
+            <mat-option value="UK">UK</mat-option>
+            <mat-option value="UAE">UAE</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div class="mb-2">
+                    <input type="Submit" name="" id="" class="btn btn-primary" value="Update">
+                    <a routerLink="/" class="btn bg-secondary text-white ms-3">Reset</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 

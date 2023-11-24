@@ -1,0 +1,57 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col">
+            <p class="h3">Add Details
+            <a href="/tourist/add" class="btn btn-success btn-sm">
+                 <i class="fa fa-plus-circle">&nbsp;</i>Add New Data</a>
+            <!-- <button mat-raised-button color="btn btn-success btn-sm" (click)="openDialog()"> -->
+                <!-- <i class="fa fa-plus-circle">&nbsp;</i>Add New Data </button> -->
+        </p>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="search data">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="Submit" class="btn btn-outline-dark" value="search">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- card detail -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card list-group-item-success">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+<img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-splunk/contentbuilder/avatar.png" alt="tourist"
+class="tourist-img">
+                        </div>
+                        <div class="col-sm-7">
+                            <ul class="list-group">
+                                <li class="list-group-item">Tourist First Name: <span class="fw-bold">ABC</span></li>
+                                <li class="list-group-item">Tourist Last Name: <span class="fw-bold">PQR</span></li>
+                                <li class="list-group-item">Date of Arrival: <span class="fw-bold">12/12/2021</span></li>
+                                <li class="list-group-item">Contact Number: <span class="fw-bold">989898989</span></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="col-sm-2 d-flex flex-column justify-content-center align-items-center">
+                            <a routerLink="/tourist/view//:touristId"
+                            class="btn btn-warning mt-1"><i class="fa fa-eye"></i></a>
+                            <a routerLink="/tourist/edit//:touristId"
+                            class="btn btn-success mt-1"><i class="fa fa-pen"></i></a>
+                            <button class="btn btn-danger mt-1"><i class="fa fa-trash-alt my-1"></i></button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
